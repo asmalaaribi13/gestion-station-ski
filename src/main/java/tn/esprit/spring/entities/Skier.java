@@ -42,7 +42,6 @@ public class Skier implements Serializable {
 			inverseJoinColumns = @JoinColumn(name = "numPiste"))
 	private Set<Piste> pistes;
 
-
 	@OneToMany(mappedBy = "skier")
 	Set<Registration> registrations;
 

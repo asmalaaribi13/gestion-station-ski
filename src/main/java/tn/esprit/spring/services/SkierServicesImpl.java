@@ -14,15 +14,10 @@ import java.util.Set;
 public class SkierServicesImpl implements ISkierServices {
 
     private ISkierRepository skierRepository;
-
     private IPisteRepository pisteRepository;
-
     private ICourseRepository courseRepository;
-
     private IRegistrationRepository registrationRepository;
-
     private ISubscriptionRepository subscriptionRepository;
-
 
     @Override
     public List<Skier> retrieveAllSkiers() {
