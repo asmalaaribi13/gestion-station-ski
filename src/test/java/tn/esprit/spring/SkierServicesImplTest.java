@@ -240,5 +240,4 @@ public class SkierServicesImplTest {
         assertEquals(1, result.size()); // S'attendre à un seul skieur
         assertEquals(skier1, result.get(0)); // Vérifier que c'est le bon skieur
     }
-
 }
