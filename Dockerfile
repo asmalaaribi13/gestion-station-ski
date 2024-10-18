@@ -1,4 +1,4 @@
-# Étape 1 : Utiliser une image de base OpenJDK 11 en version légère (slim)
+# Étape 1 : Utiliser une image de base OpenJDK 17 en version légère (alpine)
 FROM openjdk:17-jre-alpine
 
 # Étape 2 : Définir une variable d'argument pour le fichier JAR à copier
@@ -10,5 +10,5 @@ COPY ${JAR_LOCATION} app.jar
 # Étape 4 : Exposer le port sur lequel l'application écoutera
 EXPOSE 8081
 
-# Étape 5 : Définir le point d'entrée du conteneur
+# Étape 5 : Définir le point d'entrée du conteneur avec JSON
 ENTRYPOINT ["java", "-jar", "/app.jar"]
